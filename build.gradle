@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile 'org.telegram:telegrambots:5.0.1.1'
+    compile 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    compile 'org.projectlombok:lombok:1.18.18'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.12.1'
+}
+
+test {
+    useJUnitPlatform()
+}
